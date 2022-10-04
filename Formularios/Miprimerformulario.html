@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulariocss.css">
+</head>
+<body>
+    <h1>Formulario de Prueba</h1>
+     <form action="Crhistian.php" method="get">
+        <fieldset id="personal">
+            <legend>Datos Personales</legend>
+                <label id="NombreUsuario">Nombre del Usuario:</label>
+                <input type="text" name="nacido" size="40" placeholder="Ejemplo: Alejandro">
+                <label id="ApellidoUsuario">Apellido del Usuario:</label>
+                <input type="text" name="Apellido" size="40" placeholder="Ejemplo: Mendoza"> <br> <br>
+                <label id="FotoAlumno">Inserte Foto:</label>
+                <input type="file" name="Attach"><br><br>
+                <label id="FechaNacimiento">Fecha de Nacimiento y hora:</label>
+                <input type="datetime-local" name="Fecha">
+                <label id="Correo">Correo Electronico:</label>
+                <input type="email" name="Correo" placeholder="ejemplo@gmail.com" size="40"> <br> <br>
+                <label id="Genero">Pulse su genero:</label> <br>
+                <input type="radio" name="Genero" value="Hombre"> Hombre
+                <input type="radio" name="Genero" value="Mujer"> Mujer
+                <input type="radio" name="Genero" value="Otro"> Otro <br> <br>
+                <label id="Pais">Pais de Nacimiento:</label><br>
+                <select name="Pais">
+                    <option value="...">....</option>
+                    <option value="España">España</option>
+                    <option value="Francia">Francia</option>
+                    <option value="Alemania">Alemania</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="Cuba">Cuba</option>
+                </select>
+                <label id="Residencia">Donde Reside:</label>
+                <select name="Reside">
+                    <option selected>...</option>
+                 <optgroup label="España">
+                    <option value="Madrid">Madrid</option>
+                    <option value="Valencia">Valencia</option>
+                    <option value="Galicia">Galicia</option>
+                 </optgroup>
+                 <optgroup label="Francia">
+                    <option value="Paris">París</option>
+                    <option value="Versalles">Versalles</option>
+                    <option value="Marsella">Marsella</option>
+                </optgroup>
+                 <optgroup label="Alemania">
+                    <option value="Berlin">Berlín</option>
+                    <option value="Munich">Múnich</option>
+                    <option value="Colonia">Colonia</option>
+                </optgroup>
+                <optgroup label="Estados Unidos">
+                    <option value="NewYork">New York</option>
+                    <option value="Florida">Florida</option>
+                    <option value="LosAngeles">Los Angeles</option>
+                </optgroup>
+                <optgroup label="Cuba">
+                    <option value="Habana">La Habana</option>
+                    <option value="Santiago">Santiago de cuba</option>
+                    <option value="Bayamo">Bayamo</option>
+                </optgroup>
+                </select> <br>
+                <label id="algo"> Cuentame sobre ti:</label> <br>
+                <textarea name="algo" rows="4" cols="40" placeholder="Escriba algo"></textarea> 
+                 </fieldset>
+    <fieldset id="academico">
+        <legend>Datos Academicos</legend>
+        <label id="Estudios"> Ultimos Estudios:</label> <br>
+        <select name="Estudios" size="4">
+            <option value="ESO">ESO</option>
+            <option value="Bachillerato">Bachillerato</option>
+            <option value="Tecnico Medio">Tecnico Medio</option>
+            <option value="Tecnico superior">Tecnico superior</option>
+        </select> <br>
+        <label id="Donde">Centro donde se ha titulado:</label>
+        <input type="text" name="Centro" size="40" placeholder="IES Villablana">
+        <label id="Dificultad">Asignaturas con mayor Dificultad:</label>
+        <textarea name="Dificultad" rows="1" cols="30" placeholder="Ingles,Mates,etc"></textarea><br><br>
+        <label id="Nivel">Indique su nivel de concentración:(Malo,regular,Bueno)</label> <br>
+        <input type="range" name="rango" min="1" max="3" list="lista-rango">
+        <datalist id="lista-rango">
+            <option value="Malo"></option>
+            <option value="Regular"></option>
+            <option value="Bueno"></option>
+        </datalist>
+        
+
+       </fieldset><br>
+       <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+        </p>
+        
+        </form>
+
+ 
+</body>
+</html>
