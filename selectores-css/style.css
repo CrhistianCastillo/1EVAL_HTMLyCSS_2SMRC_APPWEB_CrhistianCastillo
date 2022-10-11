@@ -20,3 +20,12 @@ color: red;
 .azul{
     color: blue;
 }
+.p1{
+    background-color: dimgray;
+}
+.p3{
+    background-color: aqua;
+}
+.centro{
+    border: blueviolet 8px outset;
+}
