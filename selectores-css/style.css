@@ -1,0 +1,22 @@
+*{
+    font-family: verdana;
+}
+
+body{
+    background-color: darksalmon;
+}
+
+.encabezado{
+    background-color: black;
+    box-shadow: red 5px 8px 6px;
+}
+h1, h2{
+    color: white;
+    text-align: center;
+}
+.rojo{
+color: red;
+}
+.azul{
+    color: blue;
+}
